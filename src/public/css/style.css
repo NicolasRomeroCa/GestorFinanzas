@@ -1,0 +1,346 @@
+.footer {
+    background-color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* --- Estilos para la página de login --- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: #ffffff;
+    border: 2px solid #bebcbc;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #008000;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #006400;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* --- Estilos para la página de registro --- */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+    padding: 20px;
+}
+
+.register-form {
+    background-color: #ffffff;
+    border: 2px solid #bebcbc; 
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #008000;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #006400;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* --- Estilos para el Dashboard --- */
+.dashboard-container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dashboard-container h1 {
+    color: #008000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.finance-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-green {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.card-red {
+    background-color: #F44336;
+    color: white;
+}
+
+.card-yellow {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.transaction-form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #008000;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #006400;
+}
+
+/* --- Estilos para la página de perfil --- */
+.perfil-container {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-container h1 {
+    color: #008000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.perfil-info {
+    margin-bottom: 30px;
+}
+
+.perfil-info h2 {
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.perfil-info p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.perfil-info strong {
+    color: #000;
+}
+
+.logout-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-logout {
+    padding: 10px 20px;
+    background-color: #dc3545; /* Rojo bootstrap */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-logout:hover {
+    background-color: #c82333; /* Rojo más oscuro al hacer hover */
+}
+

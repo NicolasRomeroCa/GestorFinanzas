@@ -1,0 +1,37 @@
+<!-- src/views/partials/navbar-user.ejs -->
+<nav style="
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: #ffffff;
+    
+">
+    <!-- LOGO (enlazado a la página de inicio/finanzas) -->
+    <a href="/finanzas" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+        <img src="/img/logo.png" alt="logo" style="width: 35px; height: 35px; border-radius: 8px;">
+        <span style="font-size: 18px; font-weight: 600; color: #000000;">
+            finanzas app
+        </span>
+    </a>
+
+    <!-- LINKS CENTRALES -->
+    <div style="display: flex; align-items: center; gap: 25px;">
+        <a href="/perfil" style="text-decoration: none; color: #333; font-weight: 600;">Perfil</a>
+        <a href="#" style="text-decoration: none; color: #333; font-weight: 600;">Metas</a>
+        <a href="/finanzas" style="text-decoration: none; color: #333; font-weight: 600;">Finanzas</a>
+        <a href="#" style="text-decoration: none; color: #333; font-weight: 600;">Historial</a>
+    </div>
+
+    <!-- USER INFO Y BOTON SALIR -->
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <!-- Mostrar el nombre del usuario desde la sesión (si está disponible) -->
+        <span style="font-size: 14px; font-weight: 600; color: #333;">Hola, <%= user.name || user.username || "Usuario"
+                %></span>
+        <div
+            style="width: 30px; height: 30px; background-color: #FFD700; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold; color: #000;">
+            A</div>
+        <a href="/logout"
+            style="padding: 8px 16px; background-color: #008000; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">Salir</a>
+    </div>
+</nav>

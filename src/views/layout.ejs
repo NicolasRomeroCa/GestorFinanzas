@@ -1,0 +1,27 @@
+<!-- src/views/layout.ejs -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/img/logo.png">
+</head>
+
+<body>
+    <main>
+        <!-- Incluir el navbar adecuado según si el usuario está logueado -->
+        <% if (user) { %>
+            <%- include("partials/navbar-user") %>
+        <% } else { %>
+            <%- include("partials/navbar") %> 
+        <% } %>
+
+        <%- body %>
+    </main>
+    <%- include("partials/footer") %> <!-- Asumiendo que footer también está en partials -->
+</body>
+
+</html>

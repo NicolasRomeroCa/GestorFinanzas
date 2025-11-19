@@ -1,0 +1,14 @@
+<!-- src/views/pages/perfil.ejs -->
+<div class="perfil-container">
+    <h1>Mi Perfil</h1>
+
+    <div class="perfil-info">
+        <h2>Información del Usuario</h2>
+        <p><strong>Nombre:</strong> <%= user.name || user.username || "No disponible" %></p>
+        <p><strong>Perfil:</strong> <%= user.username || "No disponible" %></p>
+    </div>
+
+    <button class="btn btn-secondary">Guardar</button>
+
+
+</div>
