@@ -7,14 +7,12 @@ const router = Router();
 // Middleware para verificar si el usuario está autenticado (reutilizable)
 const ensureAuthenticated = (req, res, next) => {
     if (req.session.user) {
-        return next(); // El usuario está logueado, continúa
+        return next();
     }
     // Si no está logueado, redirige al login
     req.flash("error", "Debes iniciar sesión para acceder a tu perfil");
     res.redirect("/login");
 };
-
-// Ruta para mostrar el perfil del usuario (protegida)
-router.get("/perfil", ensureAuthenticated, renderPerfil);
+router.get("/", ensureAuthenticated, renderPerfil);
 
 export default router;

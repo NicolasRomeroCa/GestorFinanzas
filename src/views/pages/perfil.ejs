@@ -1,14 +1,37 @@
-<!-- src/views/pages/perfil.ejs -->
-<div class="perfil-container">
-    <h1>Mi Perfil</h1>
+<div class="container">
+    <h1 class="page-title">Mi Perfil</h1>
+    <p class="page-subtitle">Podrás ver la información asociada a tu cuenta.</p>
 
-    <div class="perfil-info">
-        <h2>Información del Usuario</h2>
-        <p><strong>Nombre:</strong> <%= user.name || user.username || "No disponible" %></p>
-        <p><strong>Perfil:</strong> <%= user.username || "No disponible" %></p>
+    <div class="profile-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="avatar-circle">
+                <%= (user.name || user.username).charAt(0).toUpperCase() %>
+            </div>
+            <div class="user-info">
+                <p><strong><%= user.name || "Nombre" %></strong></p>
+                <p>Miembro</p>
+            </div>
+            <ul class="sidebar-buttons">
+                <li><a href="/perfil">Información personal</a></li>
+                <li><a href="/finanzas">Gestión de finanzas</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Información personal</h2>
+            <form id="perfilForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="<%= user.name || '' %>" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" />
+                </div>
+                <button type="submit" class="btn-guardar">Guardar</button>
+            </form>
+        </div>
     </div>
-
-    <button class="btn btn-secondary">Guardar</button>
-
-
 </div>
